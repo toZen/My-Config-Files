@@ -1,0 +1,8 @@
+#!/bin/sh
+urxvtc -name update -e yaourt -Syua && 
+while `pgrep yaourt >/dev/null` 
+do
+    sleep 1 
+done 
+echo > /tmp/pipe
+exit 0

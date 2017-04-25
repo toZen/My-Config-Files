@@ -1,0 +1,4 @@
+ 
+echo `checkupdates | wc -l` 
+
+
